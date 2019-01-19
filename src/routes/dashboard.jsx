@@ -5,7 +5,6 @@ import Person from "@material-ui/icons/Person";
 
 import DashboardPage from "views/Dashboard/Dashboard.jsx";
 import UserProfile from "views/UserProfile/UserProfile.jsx";
-import PolicyList from "views/PolicyList/PolicyList.jsx";
 
 const dashboardRoutes = [
   {
@@ -14,13 +13,6 @@ const dashboardRoutes = [
     navbarName: "Skej Dashboard",
     icon: Dashboard,
     component: DashboardPage
-  },
-  {
-    path: "/policies",
-    sidebarName: "Policies",
-    navbarName: "Policies",
-    icon: "list",
-    component: PolicyList
   },
   {
     path: "/user",

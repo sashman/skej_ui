@@ -5,7 +5,7 @@ import { Router, Route, Switch } from "react-router-dom";
 import ApolloClient from "apollo-boost";
 import { ApolloProvider } from "react-apollo";
 
-import "assets/css/material-dashboard-react.css?v=1.5.0";
+import "assets/css/material-dashboard-react.css";
 
 import indexRoutes from "routes/index.jsx";
 
@@ -20,7 +20,9 @@ ReactDOM.render(
     <Router history={hist}>
       <Switch>
         {indexRoutes.map((prop, key) => {
-          return <Route path={prop.path} component={prop.component} key={key} />;
+          return (
+            <Route path={prop.path} component={prop.component} key={key} />
+          );
         })}
       </Switch>
     </Router>

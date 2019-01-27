@@ -3,8 +3,8 @@ import moment from "moment";
 // @material-ui/core
 import PropTypes from "prop-types";
 import withStyles from "@material-ui/core/styles/withStyles";
-import BigCalendar from "react-big-calendar";
-import styles from "react-big-calendar/lib/css/react-big-calendar.css";
+import BigCalendar from "react-big-calendar-like-google";
+import "react-big-calendar-like-google/lib/css/react-big-calendar.css";
 
 // @material-ui/icons
 import GridItem from "components/Grid/GridItem.jsx";
@@ -30,7 +30,7 @@ class Dashboard extends React.Component {
     return (
       <div>
         <GridContainer>
-          <GridItem xs={12} sm={6} md={3}>
+          <GridItem xs={12} sm={6} md={8}>
             <BigCalendar
               localizer={localizer}
               events={[

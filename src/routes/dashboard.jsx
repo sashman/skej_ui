@@ -10,7 +10,7 @@ const dashboardRoutes = [
   {
     path: "/dashboard",
     sidebarName: "Dashboard",
-    navbarName: "Skej Dashboard",
+    navbarName: "Skej it Dashboard",
     icon: Dashboard,
     component: DashboardPage
   },

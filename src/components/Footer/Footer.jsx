@@ -39,7 +39,7 @@ function Footer({ ...props }) {
         <p className={classes.right}>
           <span>
             &copy; {1900 + new Date().getYear()}{" "}
-            Skej
+            Skej it
           </span>
         </p>
       </div>

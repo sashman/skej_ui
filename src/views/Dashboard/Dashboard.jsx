@@ -35,9 +35,11 @@ class Dashboard extends React.Component {
               localizer={localizer}
               events={[
                 {
-                  title: "Stuff",
-                  start: new Date(),
-                  end: new Date()
+                  title: "My event",
+                  start: moment().toDate(),
+                  end: moment()
+                    .add(1, "hour")
+                    .toDate()
                 }
               ]}
               startAccessor="start"
